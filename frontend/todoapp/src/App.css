@@ -1,0 +1,107 @@
+.todo-app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+  text-align: left;
+}
+
+.todo-app h1 {
+  margin-bottom: 8px;
+}
+
+.subtext {
+  margin-bottom: 24px;
+}
+
+.todo-form {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo-form input,
+.todo-form textarea,
+.todo-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font: inherit;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  cursor: pointer;
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+button.secondary {
+  background: transparent;
+  border-color: var(--border);
+}
+
+button.danger {
+  background: rgba(220, 38, 38, 0.12);
+}
+
+.status {
+  margin: 8px 0 16px;
+}
+
+.status.error {
+  color: #dc2626;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+}
+
+.task-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.task-item h3 {
+  margin: 0 0 4px;
+  color: var(--text-h);
+}
+
+.task-item p {
+  margin: 0 0 10px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.badge.pending {
+  background: rgba(234, 179, 8, 0.18);
+}
+
+.badge.completed {
+  background: rgba(34, 197, 94, 0.2);
+}
